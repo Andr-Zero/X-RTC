@@ -29,16 +29,22 @@ On the bottom of the Xbox motherboard. Remove any existing LPC rebuild QSB or wi
 | `XC6206P332MR` | 3.3v Regulator for 1.6 ONLY | https://www.digikey.com/short/bqdqftzn |
 
 # Software
-Cerbios 2.4.0 or higher is required to use X-RTC. You need to edit cerbios.ini to read from X-RTC on boot.
+Cerbios 2.4.0 or higher is required to use X-RTC. 
+
 > ; Enables Automatic Time Sync With Optional RTC Hardware Connected to SMBus
 > 
 > RtcEnable = True
 
-The next release of PrometheOS and PrometheOS Tools will have the ability to set the time on X-RTC.
+Copy the X-RTC.xbe into your console's App directory. There you can set the time for the X-RTC. 
+
+The next release of PrometheOS will have the ability to set the time on X-RTC.
+
+Once the time is set and Cerbios is configured to look for the RTC chip. The time on the console will set automatically on boot.
+
 
 # Credits & Thanks
 1.6 LPC rebuild portion by Kekule. -> https://github.com/Kekule-OXC/OXC_LPCorrectr
 
-Team Resurgent for the idea, and PrometheOS.
+Team Resurgent for the idea, PrometheOS, and the XBE.
 
 Cerbios team for including functionality into their BIOS.

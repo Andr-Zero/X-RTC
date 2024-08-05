@@ -28,6 +28,7 @@ On the bottom of the Xbox motherboard. Remove any existing LPC rebuild QSB or wi
 | `DS3231MZ` | I2C Real Time Clock | https://www.digikey.com/short/m05dd78z |
 | `XC6206P332MR` | 3.3v Regulator for 1.6 ONLY | https://www.digikey.com/short/bqdqftzn |
 
+
 # Software
 Cerbios 2.4.0 or higher is required to use X-RTC. 
 
@@ -42,7 +43,10 @@ The next release of PrometheOS will have the ability to set the time on X-RTC.
 Once the time is set and Cerbios is configured to look for the RTC chip. The time on the console will set automatically on boot.
 
 
-# Credits & Thanks
+# License, Credits, & Thanks
+The hardware and it's related files is licensed under CERN-OHL-S v2 or later version.
+See License.txt, cern_ohl_s_v2.txt, and cern_ohl_s_v2_user_guide.txt for details.
+
 1.6 LPC rebuild portion by Kekule. -> https://github.com/Kekule-OXC/OXC_LPCorrectr
 
 Team Resurgent for the idea, PrometheOS, and the XBE.

@@ -3,6 +3,7 @@ A supplemental Real Time Clock for the Original Xbox
 
 The Original Xbox does not keep time when unplugged for an extended period of time. While some homebew apps have NTP functionality built in, not everyone plugs the console into their home network every time they play. 
 
+Designed so the battery is only used when AC power is removed from the console. A CR2032 in theory should last 6-10 years when constantly being used. 
 Should work with any modchip and TSOPed consoles. Have not tested with BFM BIOSes. 
 
 SDA\SDL from the console are also brought to a set of solder pads for ease of installation of any other mod that may require them. 
@@ -36,11 +37,13 @@ Cerbios 2.4.0 or higher is required to use X-RTC.
 > 
 > RtcEnable = True
 
-Copy the X-RTC.xbe into your console's App directory. There you can set the time for the X-RTC. 
+Using a Chip that can use PrometheOS:
+Version 1.4.0 or higher is able to set the time, enable RTC in PrometheOS Settings. (Rebooting recommended) 
 
-The next release of PrometheOS will have the ability to set the time on X-RTC.
+TSOP or Other:
+Download the X-RTC.xbe into your Apps folder, within you can set the time. 
 
-Once the time is set and Cerbios is configured to look for the RTC chip. The time on the console will set automatically on boot.
+Once the time is set and Cerbios is configured. The time on the console will set automatically on boot.
 
 
 # License, Credits, & Thanks
